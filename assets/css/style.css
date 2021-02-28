@@ -1,0 +1,399 @@
+
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Jura', sans-serif;
+    background: #FFF;
+    
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+     
+    
+    
+}
+
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:
+        linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+        url("../images/3dintro2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+
+    
+}
+
+
+.intro__inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    right: 200px;
+
+    
+    
+    
+}
+
+.intro__text {
+    text-align: right;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    color: #00bfff;
+    line-height: 1;
+    
+    
+
+    
+   
+
+}
+
+
+.header {
+    padding: 20px;
+    background: #00bfff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo {
+    font-size: 50px;
+    font-weight: 500;
+    color: #FFF;
+    text-shadow:  0 3px #0054FF, 0 0 5px #0054FF;
+    
+}
+
+
+.nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 200px;
+   
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    color: #FFF;
+    text-decoration: none;
+    position: relative;
+    text-shadow:  0 2px #0054FF, 0 0 2px #0054FF;
+    
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.nav__button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ccf2ff; 
+    border: 2px solid #008CBA;
+    color: #000;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    
+   
+}
+
+.nav__button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #00bfff;
+    color: #FFF;
+    
+}
+ 
+
+
+.section {
+    padding: 80px 0;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+
+.section__title {
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #00bfff;
+}
+
+.section__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.about__item {
+    background-color: #00bfff;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.about__item:hover .about__img {
+    transform: translate3d(-15px, -15px, 0);
+}
+
+.about__item:hover .about__img img {
+    opacity: .1;
+}
+
+.about__item:hover .about__text{
+    opacity: 1;
+}
+
+.about__img {
+    background: linear-gradient(to bottom, #e6f9ff, #00ace6);
+    transition: transform .2s linear;
+}
+
+
+.about__img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+
+.about__text {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity .3s linear;
+    
+}
+
+
+.block__main {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.block__card {
+    width: 30%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: #2C3A47;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 60px 40px;
+    
+
+    
+}
+
+
+.image__card {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%; 
+    animation: animated-gradient 2s linear infinite;
+ 
+}
+
+@keyframes animated-gradient {
+    25% {
+        background-position: left bottom;
+    } 
+    
+    50% {
+        background-position: right bottom;
+    } 
+    
+    75% {
+        background-position: right top;
+    } 
+    
+    100% {
+        background-position: left top;
+    }
+}
+
+.image__card img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.name {
+    color: #F2F2F2;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.job {
+    font-size: 20px;
+    color: #e66767;
+}
+
+
+.sm {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.sm a {
+    color: #F2F2F2;
+    width: 66px;
+    font-size: 24px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+
+.sm a:hover {
+    color: #e66767;
+}
+
+
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 50px;
+    color: #e66767;
+    border: 2px solid #e66767;
+    border-radius: 6px;
+    margin-top: 16px;
+    text-decoration: none;
+    transition: .3s linear;
+    
+}
+
+
+.contact-btn:hover {
+    background: #e66767;
+    color: #F2F2F2;
+}
+
+
+
+.divide {
+    visibility: hidden;
+}
+
+
+
+.footer {
+    position: absolute;  
+    background: #00bfff;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__logo {
+    font-size: 50px;
+    font-weight: 500;
+    color: #FFF;
+    text-shadow:  0 3px #0054FF, 0 0 5px #0054FF;
+    
+}
+
+.footer__bot {
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2C3A47;
+    text-transform: capitalize;
+}
+
+
+.footer__bot span {
+    text-transform: none;
+}
+
+
