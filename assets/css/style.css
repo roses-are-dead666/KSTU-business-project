@@ -277,9 +277,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     background: #2C3A47;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    padding: 60px 40px;
+    padding: 60px 20px;
     margin-bottom: 30px;
     
    
@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 50px;
     color: #e66767;
     border: 2px solid #e66767;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-top: 16px;
     text-decoration: none;
     transition: .3s linear;
@@ -530,6 +530,49 @@ h1, h2, h3, h4, h5, h6 {
         left: 10%;
         
     }
+    
+    .section {
+        padding: 40px;
+    }
+    
+    .contact--form {
+        max-width: 450px;
+        padding: 25px 35px;
+        margin-top: 150px;
+        
+    }
+    
+    .txtb {
+        font-size: 12px;
+    }
+    
+    .txtb label {
+        font-size: 12px;
+    }
+    
+    .txtb input, .txtb textarea {
+        font-size: 18px;
+    }
+    
+    .contact--form h1 {
+        font-size: 24px;
+    }
+    
+    .contact--form--btn {
+        font-size: 16px;
+    }
+    
+    .footer__logo {
+        font-size: 40px;
+    }
+    
+    .footer__bot {
+        font-size: 22px;
+    }
+    
+    .footer__rights {
+        font-size: 14px;
+    }
 }
 
 
@@ -574,10 +617,56 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 30px;
     }
     
+    .contact--form {
+        max-width: 350px;
+        padding: 20px 30px;
+        margin-top: 150px;
+        
+    }
+    
+    .txtb {
+        font-size: 10px;
+    }
+    
+    .txtb label {
+        font-size: 10px;
+    }
+    
+    .txtb input, .txtb textarea {
+        font-size: 14px;
+    }
+    
+    .contact--form h1 {
+        font-size: 20px;
+    }
+    
+    .contact--form--btn {
+        font-size: 14px;
+    }
+    
+    .footer__logo {
+        font-size: 30px;
+    }
+    
+    .footer__bot {
+        font-size: 18px;
+    }
+    
+    .footer__rights {
+        font-size: 12px;
+    }
 }
 
 
 @media (max-width: 575px) {
+    
+    .header {
+        padding: 10px;
+    }
+    
+    .header__logo {
+        font-size: 40px;
+    }
     
     .intro__text {
         font-size: 15px;
@@ -586,8 +675,55 @@ h1, h2, h3, h4, h5, h6 {
     .intro__inner {
         align-items: center;
         
+    }
+    
+    .about {
+        display: none;
+    }
+    
+    .section {
+        padding: 10px;
+    }
+    
+    .section__header {
+        margin-bottom: 0;
+    }
+    
+    .section__title {
+        font-size: 20px;
+    }
+    
+    .section__text {
+        font-size: 15px; 
+    }
+    
+    .block__card {
+        max-width: 100%;
+        max-width: 270px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    
+    .name {
+        font-size: 18px;
+    }
+    
+    .job {
+        font-size: 19px;
+    }
+    
+    .sm a {
+        font-size: 18px;
+
+    }
+    
+    .contact-btn {
+        padding: 5px 30px;
+        margin-top: 5px;
+        font-size: 18px;
         
     }
+    
 }
 
 
