@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 
 body {
@@ -6,6 +9,7 @@ body {
     line-height: 1.6;
     font-family: 'Jura', sans-serif;
     background: #FFF;
+    
     
 }
 
@@ -28,8 +32,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1240px;
     padding: 0 20px;
     margin: 0 auto;
-     
-    
     
 }
 
@@ -175,6 +177,30 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+.go__top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #00bfff;
+    bottom: 30px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 22px; 
+    transition-duration: 0.4s;
+}
+
+.go__top:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #2C3A47;
+    color: #FFF;
+    
+}
+
+
+
 
 .section--block {
     width: 100%;
@@ -279,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #2C3A47;
     border-radius: 10px;
     overflow: hidden;
-    padding: 60px 20px;
+    padding: 60px 30px;
     margin-bottom: 30px;
     
    
